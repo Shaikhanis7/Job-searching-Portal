@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -32,3 +33,6 @@ export default {
 =======
 # SDP
 >>>>>>> cc73c486f36ff0f075e39a6d0f3878a47c369f5d
+=======
+# Job-searching-Portal
+>>>>>>> cedfae9c3b3e102c93c11aca6ae16069b2d0cfe8
