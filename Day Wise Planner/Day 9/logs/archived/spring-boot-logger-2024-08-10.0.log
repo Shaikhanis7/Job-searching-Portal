@@ -1,0 +1,767 @@
+2024-08-10 17:00:42,527 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 27380 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 17:00:42,540 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 17:00:42,634 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-10 17:00:42,636 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-10 17:00:44,267 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 17:00:44,412 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 125 ms. Found 5 JPA repository interfaces.
+2024-08-10 17:00:45,482 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 17:00:45,499 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 17:00:45,506 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 17:00:45,506 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 17:00:45,609 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 17:00:45,609 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2973 ms
+2024-08-10 17:00:45,821 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 17:00:45,941 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-10 17:00:46,007 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-10 17:00:46,474 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 17:00:46,541 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-08-10 17:00:47,069 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f36068
+2024-08-10 17:00:47,069 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-08-10 17:00:47,207 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 17:00:48,807 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 17:00:49,095 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 17:00:50,250 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-08-10 17:00:50,804 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 17:00:51,866 DEBUG o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-08-10 17:00:52,831 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-08-10 17:00:52,884 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2024-08-10 17:00:52,947 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 7777 (http) with context path '/'
+2024-08-10 17:00:52,981 INFO o.s.b.StartupInfoLogger [restartedMain] Started QuizspringApplication in 11.306 seconds (process running for 12.044)
+2024-08-10 17:00:56,539 INFO o.a.j.l.DirectJDKLog [http-nio-7777-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 17:00:56,539 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-10 17:00:56,539 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-1] Completed initialization in 0 ms
+2024-08-10 17:00:56,605 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/register
+2024-08-10 17:00:56,666 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/register
+2024-08-10 17:00:56,681 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:00:56,687 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/register
+2024-08-10 17:00:59,945 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/register
+2024-08-10 17:00:59,952 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:00:59,956 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/register
+2024-08-10 17:01:35,601 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing GET /swagger-ui/index.html
+2024-08-10 17:01:35,604 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:35,604 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured GET /swagger-ui/index.html
+2024-08-10 17:01:35,797 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing GET /swagger-ui/swagger-ui.css
+2024-08-10 17:01:35,797 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing GET /swagger-ui/swagger-ui-bundle.js
+2024-08-10 17:01:35,797 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:35,797 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing GET /swagger-ui/index.css
+2024-08-10 17:01:35,797 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:35,802 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured GET /swagger-ui/swagger-ui.css
+2024-08-10 17:01:35,802 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured GET /swagger-ui/swagger-ui-bundle.js
+2024-08-10 17:01:35,802 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:35,807 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured GET /swagger-ui/index.css
+2024-08-10 17:01:36,093 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing GET /swagger-ui/swagger-initializer.js
+2024-08-10 17:01:36,095 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:36,095 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-08-10 17:01:36,095 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured GET /swagger-ui/swagger-initializer.js
+2024-08-10 17:01:36,095 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:36,100 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-08-10 17:01:36,368 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing GET /swagger-ui/favicon-32x32.png
+2024-08-10 17:01:36,373 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:36,373 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured GET /swagger-ui/favicon-32x32.png
+2024-08-10 17:01:36,407 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing GET /v3/api-docs/swagger-config
+2024-08-10 17:01:36,413 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:36,416 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured GET /v3/api-docs/swagger-config
+2024-08-10 17:01:36,463 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing GET /v3/api-docs
+2024-08-10 17:01:36,471 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:01:36,471 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured GET /v3/api-docs
+2024-08-10 17:01:37,268 INFO o.s.a.AbstractOpenApiResource [http-nio-7777-exec-3] Init duration for springdoc-openapi is: 773 ms
+2024-08-10 17:04:27,756 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing OPTIONS /api/auth/login
+2024-08-10 17:04:27,770 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /api/auth/login
+2024-08-10 17:04:27,773 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:04:27,774 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured POST /api/auth/login
+2024-08-10 17:04:28,280 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-8] Authenticated user
+2024-08-10 17:05:16,097 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing OPTIONS /api/auth/register
+2024-08-10 17:05:16,106 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/register
+2024-08-10 17:05:16,110 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 17:05:16,110 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/register
+2024-08-10 19:27:05,132 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5720 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 19:27:05,137 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 19:27:05,221 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-10 19:27:05,222 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-10 19:27:06,851 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 19:27:06,997 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 133 ms. Found 5 JPA repository interfaces.
+2024-08-10 19:27:08,235 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 19:27:08,272 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 19:27:08,286 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 19:27:08,287 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 19:27:08,455 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 19:27:08,459 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3234 ms
+2024-08-10 19:27:08,773 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 19:27:09,082 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-10 19:27:09,183 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-10 19:27:09,800 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 19:27:09,855 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-08-10 19:27:10,515 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5041de27
+2024-08-10 19:27:10,519 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-08-10 19:27:10,666 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 19:27:12,181 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 19:27:12,802 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 19:27:13,431 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-08-10 19:27:13,721 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 19:27:14,240 DEBUG o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-08-10 19:27:14,656 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-08-10 19:27:14,680 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2024-08-10 19:27:14,725 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 7777 (http) with context path '/'
+2024-08-10 19:27:14,739 INFO o.s.b.StartupInfoLogger [restartedMain] Started QuizspringApplication in 10.499 seconds (process running for 11.317)
+2024-08-10 19:29:09,390 INFO o.a.j.l.DirectJDKLog [http-nio-7777-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 19:29:09,392 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-4] Initializing Servlet 'dispatcherServlet'
+2024-08-10 19:29:09,395 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-4] Completed initialization in 2 ms
+2024-08-10 19:29:09,439 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing OPTIONS /api/auth/register
+2024-08-10 19:29:09,471 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/register
+2024-08-10 19:29:09,477 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 19:29:09,482 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/register
+2024-08-10 19:29:47,081 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing OPTIONS /api/auth/login
+2024-08-10 19:29:47,085 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-10 19:29:47,087 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 19:29:47,088 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-10 19:29:47,346 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-5] Failed to authenticate since password does not match stored value
+2024-08-10 19:29:47,358 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-10 19:29:47,373 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-10 19:29:47,375 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 19:29:47,378 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-10 19:30:05,201 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing OPTIONS /api/auth/login
+2024-08-10 19:30:05,205 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-10 19:30:05,206 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 19:30:05,207 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-10 19:30:05,336 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-2] Authenticated user
+2024-08-10 19:32:46,349 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing OPTIONS /api/auth/login
+2024-08-10 19:32:46,362 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-10 19:32:46,363 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 19:32:46,365 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-10 19:32:46,497 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-4] Authenticated user
+2024-08-10 20:43:18,293 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 20:43:18,301 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 20:43:18,398 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-10 20:43:18,400 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-10 20:43:20,260 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 20:43:20,414 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 136 ms. Found 5 JPA repository interfaces.
+2024-08-10 20:43:21,553 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 20:43:21,569 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 20:43:21,574 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 20:43:21,575 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 20:43:21,657 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 20:43:21,660 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3257 ms
+2024-08-10 20:43:21,848 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 20:43:22,069 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-10 20:43:22,127 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-10 20:43:22,587 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 20:43:22,630 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-08-10 20:43:23,117 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ac03b2f
+2024-08-10 20:43:23,120 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-08-10 20:43:23,235 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 20:43:24,637 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 20:43:24,879 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 20:43:25,354 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-08-10 20:43:25,543 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-10 20:43:26,122 DEBUG o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-08-10 20:43:26,622 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-08-10 20:43:26,648 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2024-08-10 20:43:26,697 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 7777 (http) with context path '/'
+2024-08-10 20:43:26,720 INFO o.s.b.StartupInfoLogger [restartedMain] Started QuizspringApplication in 9.434 seconds (process running for 10.426)
+2024-08-10 20:45:43,509 INFO o.a.j.l.DirectJDKLog [http-nio-7777-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-10 20:45:43,511 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-10 20:45:43,515 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-1] Completed initialization in 3 ms
+2024-08-10 20:45:43,564 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/register
+2024-08-10 20:45:43,612 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/register
+2024-08-10 20:45:43,627 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 20:45:43,637 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/register
+2024-08-10 20:58:01,687 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing OPTIONS /api/auth/login
+2024-08-10 20:58:01,695 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-10 20:58:01,697 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 20:58:01,698 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-10 20:58:01,932 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-5] Authenticated user
+2024-08-10 21:08:44,607 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m21s23ms563µs501ns).
+2024-08-10 21:09:46,492 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing OPTIONS /api/auth/login
+2024-08-10 21:09:46,496 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-10 21:09:46,503 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:09:46,504 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-10 21:09:46,761 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-10] Authenticated user
+2024-08-10 21:10:26,228 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing GET /swagger-ui/index.html
+2024-08-10 21:10:26,228 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:26,243 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured GET /swagger-ui/index.html
+2024-08-10 21:10:26,473 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing GET /swagger-ui/swagger-ui.css
+2024-08-10 21:10:26,479 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:26,481 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured GET /swagger-ui/swagger-ui.css
+2024-08-10 21:10:26,481 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing GET /swagger-ui/index.css
+2024-08-10 21:10:26,481 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing GET /swagger-ui/swagger-initializer.js
+2024-08-10 21:10:26,481 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:26,481 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-08-10 21:10:26,481 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing GET /swagger-ui/swagger-ui-bundle.js
+2024-08-10 21:10:26,489 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:26,490 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:26,491 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured GET /swagger-ui/swagger-initializer.js
+2024-08-10 21:10:26,493 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured GET /swagger-ui/swagger-ui-bundle.js
+2024-08-10 21:10:26,496 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:26,493 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured GET /swagger-ui/index.css
+2024-08-10 21:10:26,498 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-08-10 21:10:26,962 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing GET /swagger-ui/favicon-32x32.png
+2024-08-10 21:10:26,962 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:26,968 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured GET /swagger-ui/favicon-32x32.png
+2024-08-10 21:10:27,009 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing GET /v3/api-docs/swagger-config
+2024-08-10 21:10:27,010 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:27,012 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured GET /v3/api-docs/swagger-config
+2024-08-10 21:10:27,017 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing GET /swagger-ui/favicon-32x32.png
+2024-08-10 21:10:27,018 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:27,018 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured GET /swagger-ui/favicon-32x32.png
+2024-08-10 21:10:27,098 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing GET /v3/api-docs
+2024-08-10 21:10:27,104 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-10 21:10:27,108 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured GET /v3/api-docs
+2024-08-10 21:10:28,441 INFO o.s.a.AbstractOpenApiResource [http-nio-7777-exec-8] Init duration for springdoc-openapi is: 1166 ms
+2024-08-10 21:26:59,497 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s86ms581µs400ns).
+2024-08-10 21:47:31,361 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-08-10 21:47:31,645 INFO o.a.j.l.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-7777"]
+2024-08-10 21:47:31,810 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 21:47:31,957 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2024-08-10 21:47:31,989 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2024-08-10 21:47:32,601 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 21:47:32,601 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 21:47:33,090 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 21:47:33,122 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
+2024-08-10 21:47:33,425 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 21:47:33,429 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 21:47:33,429 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 21:47:33,429 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 21:47:33,459 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 21:47:33,459 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 852 ms
+2024-08-10 21:47:33,510 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 21:47:33,523 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-10 21:47:33,548 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 21:47:33,554 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-08-10 21:47:33,575 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21f98605
+2024-08-10 21:47:33,575 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-08-10 21:47:33,581 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 21:47:33,720 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 21:47:33,803 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 21:47:33,922 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\controller\AdminController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService': Lookup method resolution failed
+2024-08-10 21:47:33,922 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 21:47:33,922 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Shutdown initiated...
+2024-08-10 21:47:33,937 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Shutdown completed.
+2024-08-10 21:47:33,939 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 21:47:33,945 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 21:47:33,974 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\controller\AdminController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.max.quizspring.QuizspringApplication.main(QuizspringApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authService': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.max.quizspring.service.AuthService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5ab25946]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: User
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: User
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 44 common frames omitted
+2024-08-10 21:47:45,782 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 21:47:45,788 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 21:47:46,065 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 21:47:46,081 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-08-10 21:47:46,231 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 21:47:46,239 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 21:47:46,239 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 21:47:46,239 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 21:47:46,265 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 21:47:46,265 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 477 ms
+2024-08-10 21:47:46,359 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 21:47:46,364 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-10 21:47:46,376 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 21:47:46,376 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2024-08-10 21:47:46,399 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@334cea33
+2024-08-10 21:47:46,399 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2024-08-10 21:47:46,403 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 21:47:46,534 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 21:47:46,585 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 21:47:46,721 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\controller\AdminController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService': Lookup method resolution failed
+2024-08-10 21:47:46,723 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 21:47:46,724 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Shutdown initiated...
+2024-08-10 21:47:46,772 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Shutdown completed.
+2024-08-10 21:47:46,772 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 21:47:46,782 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 21:47:46,788 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\controller\AdminController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.max.quizspring.QuizspringApplication.main(QuizspringApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authService': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.max.quizspring.service.AuthService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@391fcdaa]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: User
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: User
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 44 common frames omitted
+2024-08-10 21:48:36,653 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 21:48:36,653 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 21:48:36,932 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 21:48:36,956 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-08-10 21:48:37,121 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 21:48:37,121 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 21:48:37,121 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 21:48:37,121 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 21:48:37,156 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 21:48:37,156 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 499 ms
+2024-08-10 21:48:37,351 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-10 21:48:37,365 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-10 21:48:37,403 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-10 21:48:37,407 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2024-08-10 21:48:37,432 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7345e0a6
+2024-08-10 21:48:37,434 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2024-08-10 21:48:37,438 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-10 21:48:37,605 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-10 21:48:37,663 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 21:48:37,815 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\controller\AdminController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService': Lookup method resolution failed
+2024-08-10 21:48:37,831 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-10 21:48:37,831 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Shutdown initiated...
+2024-08-10 21:48:37,875 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Shutdown completed.
+2024-08-10 21:48:37,875 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 21:48:37,882 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 21:48:37,891 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\controller\AdminController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.max.quizspring.QuizspringApplication.main(QuizspringApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authService': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.max.quizspring.service.AuthService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6e5c8b21]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475)
+	... 38 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: User
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: User
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 44 common frames omitted
+2024-08-10 21:53:28,442 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 21:53:28,445 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 21:53:28,997 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 21:53:29,027 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2024-08-10 21:53:29,196 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 21:53:29,196 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 21:53:29,196 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 21:53:29,196 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 21:53:29,229 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 21:53:29,238 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 790 ms
+2024-08-10 21:53:29,254 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 21:53:29,254 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 21:53:29,259 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 21:53:29,265 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 21:53:29,278 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+
+2024-08-10 21:53:31,810 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 21:53:31,810 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 21:53:32,039 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 21:53:32,058 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-08-10 21:53:32,164 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 21:53:32,164 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 21:53:32,164 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 21:53:32,164 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 21:53:32,197 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 21:53:32,197 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 383 ms
+2024-08-10 21:53:32,207 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 21:53:32,213 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 21:53:32,213 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 21:53:32,240 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 21:53:32,258 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+
+2024-08-10 21:56:21,582 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 21:56:21,584 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 21:56:21,964 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 21:56:22,012 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+2024-08-10 21:56:22,256 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 21:56:22,256 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 21:56:22,256 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 21:56:22,256 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 21:56:22,283 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 21:56:22,283 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 699 ms
+2024-08-10 21:56:22,289 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 21:56:22,298 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 21:56:22,302 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 21:56:22,306 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 21:56:22,306 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+
+2024-08-10 21:57:59,838 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 21:57:59,842 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 21:58:00,159 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 21:58:00,179 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2024-08-10 21:58:00,317 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 21:58:00,318 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 21:58:00,319 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 21:58:00,320 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 21:58:00,350 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 21:58:00,351 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 506 ms
+2024-08-10 21:58:00,396 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 21:58:00,400 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 21:58:00,405 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 21:58:00,412 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 21:58:00,418 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+
+2024-08-10 22:01:54,622 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 22:01:54,633 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 22:01:55,002 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 22:01:55,021 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2024-08-10 22:01:55,184 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 22:01:55,186 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 22:01:55,188 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 22:01:55,188 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 22:01:55,221 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 22:01:55,221 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 584 ms
+2024-08-10 22:01:55,221 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 22:01:55,237 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 22:01:55,237 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 22:01:55,237 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 22:01:55,253 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+
+2024-08-10 22:04:24,170 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 22:04:24,174 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 22:04:24,534 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 22:04:24,565 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
+2024-08-10 22:04:24,733 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 22:04:24,733 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 22:04:24,733 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 22:04:24,733 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 22:04:24,763 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 22:04:24,763 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 585 ms
+2024-08-10 22:04:24,772 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 22:04:24,780 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 22:04:24,788 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 22:04:24,798 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 22:04:24,804 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+
+2024-08-10 22:09:27,539 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 22:09:27,539 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 22:09:27,955 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 22:09:27,979 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
+2024-08-10 22:09:28,162 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 22:09:28,162 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 22:09:28,162 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 22:09:28,162 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 22:09:28,203 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 22:09:28,203 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 664 ms
+2024-08-10 22:09:28,217 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 22:09:28,219 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 22:09:28,223 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 22:09:28,230 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 22:09:28,234 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+
+2024-08-10 22:09:54,757 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 22:09:54,757 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 22:09:55,101 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 22:09:55,135 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
+2024-08-10 22:09:55,346 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 22:09:55,348 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 22:09:55,349 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 22:09:55,351 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 22:09:55,382 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 22:09:55,384 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 627 ms
+2024-08-10 22:09:55,396 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 22:09:55,398 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 22:09:55,402 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 22:09:55,409 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 22:09:55,415 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+
+2024-08-10 22:10:13,381 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 5972 (C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes started by thila in C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main)
+2024-08-10 22:10:13,384 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-10 22:10:13,729 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-10 22:10:13,771 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 42 ms. Found 5 JPA repository interfaces.
+2024-08-10 22:10:13,957 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-10 22:10:13,957 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-10 22:10:13,957 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-10 22:10:13,957 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-10 22:10:13,986 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-10 22:10:13,986 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 598 ms
+2024-08-10 22:10:13,994 ERROR o.s.b.w.e.t.TomcatStarter [restartedMain] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\thila\OneDrive\Documents\GitHub\SDP_PROJECT\software_design_pattern\SDP-BACKEND\Spring-Security-Backend-main\Spring-Security-Backend-main\target\classes\com\max\quizspring\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.max.quizspring.config.JwtToken' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-10 22:10:13,994 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-08-10 22:10:14,004 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-10 22:10:14,012 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-10 22:10:14,021 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.max.quizspring.config.JwtAuthenticationFilter required a bean of type 'com.max.quizspring.config.JwtToken' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.max.quizspring.config.JwtToken' in your configuration.
+

@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-QuizspringApplication<com.max-securitytemplatev3>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.max.quizspring.QuizspringApplication",
+      "projectName": "com.max-securitytemplatev3",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
